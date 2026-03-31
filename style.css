@@ -20,7 +20,6 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 15px;
-  margin-right: 25px;
 }
 
 .hero {
@@ -88,4 +87,10 @@ section {
   padding: 40px 40px;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.container { 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 40px; 
 }
