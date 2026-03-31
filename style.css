@@ -88,3 +88,12 @@ iframe {
   flex-direction: column;
   gap: 20px;
 }
+body {
+  padding: 20px;
+}.card {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+}h1, h2 {
+  margin-bottom: 20px;
+}
