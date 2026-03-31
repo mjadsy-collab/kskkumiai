@@ -64,10 +64,10 @@ button:hover {
   background-color: #656977;
 }
 
-
 .card-container {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
