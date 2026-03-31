@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', Arial, sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
-  color: #333349;
+  color: #2e2e3b;
 }
-
 header {
   background-color: #393d4f;
   color: #d8d8eb;
