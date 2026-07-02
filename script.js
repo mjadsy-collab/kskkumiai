@@ -8,63 +8,37 @@ const opening = document.querySelector(".opening");
 const heroContent = document.querySelector(".hero-content");
 const header = document.querySelector(".header");
 
+const isMobile = window.innerWidth <= 768;
+
+const blackDistance = isMobile ? 500 : 1000;
+const textStart = isMobile ? 30 : 60;
+const textDistance = isMobile ? 100 : 160;
 
 window.addEventListener("scroll", () => {
   const y = window.scrollY;
 
-  if (window.innerwidth > 768){
-    //pc
-    let blackOpacity = 1 - y / 1000;
-    if (blackOpacity < 0) blackOpacity = 0;
+  let blackOpacity = 1 - y / blackDistance;
+  blackOpacity = Math.max(0, blackOpacity);
 
-    opening.style.opacity = blackOpacity;
+  opening.style.opacity = blackOpacity;
 
-    let textOpacity = (y - 60) / 160;
-    if (textOpacity < 0) textOpacity = 0;
-    if (textOpacity > 1) textOpacity = 1;
+  let textOpacity = (y - textStart) / textDistance;
+  textOpacity = Math.min(1, Math.max(0, textOpacity));
 
-    heroContent.style.opacity = textOpacity;
+  heroContent.style.opacity = textOpacity;
 
-  }else{
-    //スマホ
-    let blackOpacity = 1 - y / 500;
-    if (blackOpacity < 0) blackOpacity = 0;
-
-    opening.style.opacity = blackOpacity;
-
-    let textOpacity = (y - 40) / 100;
-    if (textOpacity < 0) textOpacity = 0;
-    if (textOpacity > 1) textOpacity = 1;
-
-    heroContent.style.opacity = textOpacity;
-  }  
 });
 
+
+const endValue = isMobile ? "+=730" : "+=1030";
+const startValue = isMobile ? "top center" : "top 35%";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const mm = gsap.matchMedia();
-
-mm.add("(min-width: 769px)", () => {
-    // PC用
-  ScrollTrigger.create({
+ScrollTrigger.create({
     trigger: ".hero-content",
-    start: "top 35%",
-    end: "+=1030",
+    start: startValue,
+    end: endValue,
     pin: true,
-    pinSpacing: false,
-    markers: false
-  });
-});
-
-mm.add("(max-width: 768px)", () => {
-    // スマホ用
-  ScrollTrigger.create({
-    trigger: ".hero-content",
-    start: "top center",
-    end: "+=730",
-    pin: true,
-    pinSpacing: false,
-    markers: true
-  });
+    pinSpacing: false
 });
