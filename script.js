@@ -12,17 +12,32 @@ const header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
   const y = window.scrollY;
 
-  let blackOpacity = 1 - y / 1000;
-  if (blackOpacity < 0) blackOpacity = 0;
+  if (window.innerwidth > 768){
+    //pc
+    let blackOpacity = 1 - y / 1000;
+    if (blackOpacity < 0) blackOpacity = 0;
 
-  opening.style.opacity = blackOpacity;
+    opening.style.opacity = blackOpacity;
 
-  let textOpacity = (y - 60) / 160;
-  if (textOpacity < 0) textOpacity = 0;
-  if (textOpacity > 1) textOpacity = 1;
+    let textOpacity = (y - 60) / 160;
+    if (textOpacity < 0) textOpacity = 0;
+    if (textOpacity > 1) textOpacity = 1;
 
-  heroContent.style.opacity = textOpacity;
+    heroContent.style.opacity = textOpacity;
 
+  }else{
+    //スマホ
+    let blackOpacity = 1 - y / 500;
+    if (blackOpacity < 0) blackOpacity = 0;
+
+    opening.style.opacity = blackOpacity;
+
+    let textOpacity = (y - 40) / 100;
+    if (textOpacity < 0) textOpacity = 0;
+    if (textOpacity > 1) textOpacity = 1;
+
+    heroContent.style.opacity = textOpacity;
+  }  
 });
 
 
