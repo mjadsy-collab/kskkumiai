@@ -225,4 +225,15 @@ html {
   iframe {
     height: 400px;
   }
+  
+  #団体概要 h2{
+  text-align: center;
+  }
+
+  #団体概要 p{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
 }
