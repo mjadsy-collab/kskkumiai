@@ -8,6 +8,7 @@ const opening = document.querySelector(".opening");
 const heroContent = document.querySelector(".hero-content");
 const header = document.querySelector(".header");
 
+
 window.addEventListener("scroll", () => {
   const y = window.scrollY;
 
@@ -27,12 +28,28 @@ window.addEventListener("scroll", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.create({
-  trigger: ".hero-content",
-  start: "top 35%",
-  end: "+=1030",
-  pin: true,
-  pinSpacing: false,
-  markers: false
+const mm = gsap.matchMedia();
 
+mm.add("(min-width: 769px)", () => {
+    // PC用
+  ScrollTrigger.create({
+    trigger: ".hero-content",
+    start: "top 35%",
+    end: "+=1030",
+    pin: true,
+    pinSpacing: false,
+    markers: false
+  });
+});
+
+mm.add("(max-width: 768px)", () => {
+    // スマホ用
+  ScrollTrigger.create({
+    trigger: ".hero-content",
+    start: "top center",
+    end: "+=730",
+    pin: true,
+    pinSpacing: false,
+    markers: true
+  });
 });
