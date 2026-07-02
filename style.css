@@ -1,53 +1,107 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Serif JP", sans-serif;
+
   line-height: 1.6;
   background-color: #ffffff;
   color: #333349;
 }
 
-header {
-  background-color: #393d4f;
-  color: #d8d8eb;
-  padding: 20px;
+.opening {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 9999;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}h1 {
-  color: white;
+
+  animation: openingFade 3s forwards;
 }
 
-nav a {
+.opening-logo {
   color: white;
-  text-decoration: none;
-  margin-left: 15px;
+  font-size: 52px;
+  letter-spacing: 4px;
+  opacity: 0;
+
+  animation: logoFade 2s ease forwards;
 }
 
 .hero {
+    height: 200vh;
+    width: 100%;
+    position: relative;
+
+    background-image: url("images/background.jpg");
+    background-size: 200%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+.hero-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
+  color: rgb(240, 74, 41);
   text-align: center;
-  padding: 80px 20px;
-  background-color: #d3ddee;
+  opacity: 0;
+  z-index: 10000;
 }
 
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
+.hero-content h1 {
+  font-family: "Yu Mincho", "YuMincho", Georgia, serif;
+  font-size: 70px;
 }
 
-.card-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.hero-content p {
+  font-family: "Kaisei Decol", sans-serif;
+  font-size: 50px
 }
 
-.card {
+.about {
+  min-height: 100vh;
+  padding: 80px;
   background: white;
-  padding: 20px;
-  width: 33%;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: black;
+  font-family: "Yu Mincho", "YuMincho", Georgia, serif;
+
 }
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index:1000;
+
+  background-color: #1b2344;
+  color: #d8d8eb;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}h1 {
+  color: white;
+  margin-left: 50px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  transform: translateY(5px);
+}
+
 
 footer {
   text-align: center;
@@ -55,11 +109,7 @@ footer {
   background-color: #8fb4e8;
   color: white;
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-}
+
 button:hover {
   background-color: #656977;
 }
@@ -79,8 +129,51 @@ button:hover {
   box-sizing: border-box;
 }
 
+section:not(.hero) {
+  padding: 50px 20px;
+  margin: auto;
+  font-family: "Yu Mincho", "YuMincho", Georgia, serif;
+}
+
 iframe {
   width: 100%;
   height: 500px;
   border: none;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#File{
+  background-color: #7fbede;
+  max-width: 1000px;
+}
+
+#団体概要{
+  background-color: #e0e2e3;
+}
+
+#団体概要 h2{
+  text-align: center;
+}
+
+#団体概要 p{
+  text-align: left;
+  margin-left: 580px;
+  margin-right: 40px;
+}
+
+#試し{
+  display: flex;
+  flex-direction: column;   /* 縦に並べる */
+  justify-content: center;  /* 縦方向中央 */
+  align-items: center;      /* 横方向中央 */
+
+  min-height: 50vh;
+  text-align: center;
 }
