@@ -11,7 +11,7 @@ const header = document.querySelector(".header");
 const isMobile = window.innerWidth <= 768;
 
 const blackDistance = isMobile ? 500 : 1000;
-const textStart = isMobile ? 30 : 60;
+const textStart = isMobile ? 20 : 60;
 const textDistance = isMobile ? 100 : 160;
 
 window.addEventListener("scroll", () => {
