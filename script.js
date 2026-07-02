@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-const endValue = isMobile ? "+=730" : "+=1030";
+const endValue = isMobile ? "+=530" : "+=1030";
 const startValue = isMobile ? "top center" : "top 35%";
 
 gsap.registerPlugin(ScrollTrigger);
