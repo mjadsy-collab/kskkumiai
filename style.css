@@ -155,7 +155,7 @@ html {
 }
 
 #団体概要{
-  background-color: #0d364a;
+  background-color: #e0e2e3;
 }
 
 #団体概要 h2{
@@ -203,6 +203,7 @@ html {
 
   .hero-content h1 {
     font-size: 36px;
+    margin-right: 10px;
   }
 
   .hero-content p {
