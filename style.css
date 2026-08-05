@@ -348,6 +348,7 @@ iframe {
   }
   .hero-content p {
     font-size: 25px;
+    margin-left: 0;
   }
 
   section:not(.hero) {
