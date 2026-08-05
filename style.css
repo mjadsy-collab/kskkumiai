@@ -294,19 +294,15 @@ html {
     align-items: center;
   }
 
-  .opening-logo {
-    align-items: center;
-    font-size: 30px;
-  }
-
   .hero {
+    align-items: center;
     height: 150vh;
     background-size: cover;
     background-position: center;
   }
 
   .hero-content h1 {
-    font-size: 65px;
+    font-size: 45px;
   }
 
   .hero-content p {
