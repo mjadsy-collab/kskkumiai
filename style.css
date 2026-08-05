@@ -27,7 +27,7 @@ body {
 
 .opening-logo {
   color: white;
-  font-size: 60px;
+  font-size: 70px;
   letter-spacing: 4px;
   opacity: 0;
 
@@ -52,7 +52,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
     
-  color: rgb(240, 74, 41);
+  color: rgb(102, 96, 96);
   text-align: center;
   opacity: 0;
   z-index: 10000;
@@ -165,7 +165,7 @@ html {
 }
 
 #研修センター紹介{
-  background-color: #cacad0;
+  background-color: #d9d9dc;
   text-align: center;
 }
 
