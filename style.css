@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Noto Serif JP", sans-serif;
@@ -87,7 +94,16 @@ header {
   background: rgba(24, 23, 23, 0.9);
   transition: top 0.9s ease;
 }
+header h1 a {
+  text-decoration: none;
 
+}
+header h1 a:visited {
+  color: white;
+}
+header h1 a:hover {
+  color:#fd4a18
+}
 header.show {
   top: 0;                   /* 表示 */
 }
@@ -103,8 +119,17 @@ header nav a {
   margin-right: 10px;
   margin-left: 15px;
   display: inline-block;
-  transform: translateY(30px)
+  transform: translateY(30px)  
 }
+
+header nav a:hover {
+  background-color: #fd4a18;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2px 16px;
+  border-radius: 20px;
+}
+
 
 #about {
   min-height: 60vh;
@@ -126,9 +151,6 @@ header nav a {
   color: white;
 }*/
 
-button:hover {
-  background-color: #656977;
-}
 
 .card-container {
   display: flex;
@@ -154,14 +176,8 @@ section {
     scroll-margin-top: 80px;
 }
 
-iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 #研修センター紹介{
@@ -172,6 +188,7 @@ html {
 .title研修 {
   text-align: left;
 }
+
 .title研修 h2 {
   display: inline-block;
 
@@ -260,6 +277,7 @@ html {
 }
 
 #File{
+  padding-top: 100px;
   background-color: #6d6969;
   /*max-width: 1000px;*/
 }
@@ -273,14 +291,25 @@ html {
   margin-right: 24%;
 }
 
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+
 #お問い合わせ{
-  color: #f3f9dd;
-  background-color: #011120;
+  color: #fefffa;
+  background-color: #20262cdd;
   text-align: center;
 }
 
 #お問い合わせ h2{
   text-align: center;
+  
+  display: inline-block;
+  border-bottom: 3px solid #fefffa;
+  padding: 0 10px 5px 10px;
 }
 
 #お問い合わせ p{
@@ -295,16 +324,28 @@ html {
   }
 
   .hero {
+    width: 100%;
+    max-width: 100%;
     align-items: center;
     height: 150vh;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .hero-content h1 {
-    font-size: 45px;
+    left: 50%;
+    width: calc(100%-40px);
+    max-width: 100%;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
-
+  .hero-content h1 {
+    font-size: 45px;
+    margin-left: 0;
+  }
   .hero-content p {
     font-size: 25px;
   }
@@ -312,6 +353,7 @@ html {
   section:not(.hero) {
     padding: 50px 20px;
     max-width: 100%;
+    box-sizing: border-box;
   }
 
   header {
@@ -361,13 +403,13 @@ html {
   }
 
   .File .card-container{
-    margin-left: 14%;
+    margin-left: 4%;
     margin-right: 14%;
     flex-direction: column;
   }
 
   .card {
-    width: 100%;
+    width: 200%;
   }
 
   iframe {
