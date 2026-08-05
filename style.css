@@ -274,14 +274,12 @@ html {
 }
 
 #お問い合わせ{
-  background-color: #afa8a8;
-}
-
-#お問い合わせ h2{
+  color: #d8d8eb;
+  background-color: #262525;
   text-align: center;
 }
 
-#お問い合わせ {
+#お問い合わせ h2{
   text-align: center;
 }
 
