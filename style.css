@@ -260,7 +260,7 @@ html {
 }
 
 #File{
-  background-color: #c9e2ed;
+  background-color: #ffffff;
   /*max-width: 1000px;*/
 }
 
@@ -303,8 +303,7 @@ html {
   }
 
   .hero-content h1 {
-    font-size: 36px;
-    margin-right: 10px;
+    font-size: 25px;
   }
 
   .hero-content p {
@@ -331,7 +330,7 @@ html {
     transform: translateY(0);
   }
 
-  header nav a{
+  header nav {
     transform: translateY(15px);
   }
 
