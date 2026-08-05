@@ -331,6 +331,9 @@ html {
     transform: translateY(0);
   }
 
+  header nav a{
+    transform: translateY(15px);
+  }
 
   nav {
     margin-top: 10px;
