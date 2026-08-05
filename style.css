@@ -327,7 +327,7 @@ html {
 
     height: auto;
     top: 0;
-    transform: translateY(-120%);
+    transform: translateY(-150%);
     transition: transform 0.9s ease;
   }
 
