@@ -292,6 +292,30 @@ html {
 
 
 @media (max-width: 768px) {
+  .opening {
+    align-items: center;
+  }
+
+  .hero {
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    margin-right: 10px;
+  }
+
+  .hero-content p {
+    font-size: 40px;
+  }
+
+  section:not(.hero) {
+    padding: 50px 20px;
+    max-width: 100%;
+  }
+
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -315,26 +339,6 @@ html {
   nav a {
     display: inline-block;
     margin: 5px 10px 5px 0;
-  }
-
-  .hero {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-content h1 {
-    font-size: 36px;
-    margin-right: 10px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  section:not(.hero) {
-    padding: 50px 20px;
-    max-width: 100%;
   }
 
   .card-container {
