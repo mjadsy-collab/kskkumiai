@@ -52,7 +52,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
     
-  color: rgb(102, 96, 96);
+  color: rgb(204, 198, 198);
   text-align: center;
   opacity: 0;
   z-index: 10000;
@@ -298,11 +298,13 @@ html {
     padding: 15px 20px;
 
     height: auto;
-    top: -200px;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform 0.9s ease;
   }
 
   header.show {
-    top: 0;
+    transform: translateY(0);
   }
 
 
