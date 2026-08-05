@@ -260,7 +260,7 @@ html {
 }
 
 #File{
-  background-color: #ffffff;
+  background-color: #6d6969;
   /*max-width: 1000px;*/
 }
 
@@ -274,8 +274,8 @@ html {
 }
 
 #お問い合わせ{
-  color: #d8d8eb;
-  background-color: #262525;
+  color: #f3f9dd;
+  background-color: #011120;
   text-align: center;
 }
 
@@ -296,7 +296,7 @@ html {
 
   .opening-logo {
     align-items: center;
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .hero {
@@ -339,14 +339,14 @@ html {
 
   .about {
     min-height: 60vh;
-    padding: 70px;
+    padding: 20px;
     padding-top: 300px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Yu Mincho", "YuMincho", Georgia, serif;
     h2 {font-size: 38px;}
-    h3 {font-size: 25px;}
+    h3 {font-size: 20px;}
     p {font-size: 18px;}
   }
 
