@@ -296,8 +296,13 @@ html {
     align-items: center;
   }
 
+  .opening-logo {
+    align-items: center;
+    font-size: 60px;
+  }
+
   .hero {
-    height: 200vh;
+    height: 150vh;
     background-size: cover;
     background-position: center;
   }
@@ -307,7 +312,7 @@ html {
   }
 
   .hero-content p {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   section:not(.hero) {
@@ -334,6 +339,19 @@ html {
     transform: translateY(15px);
   }
 
+  .about {
+    min-height: 60vh;
+    padding: 70px;
+    padding-top: 300px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Yu Mincho", "YuMincho", Georgia, serif;
+    h2 {font-size: 38px;}
+    h3 {font-size: 25px;}
+    p {font-size: 18px;}
+  }
+
   nav {
     margin-top: 10px;
   }
@@ -343,8 +361,14 @@ html {
     margin: 5px 10px 5px 0;
   }
 
-  .card-container {
-    flex-direction: column;
+  .File h2{
+  margin-left: 10%;
+  }
+
+  .File .card-container{
+  margin-left: 14%;
+  margin-right: 14%;
+  flex-direction: column;
   }
 
   .card {
