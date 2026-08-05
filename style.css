@@ -274,7 +274,7 @@ html {
 }
 
 #お問い合わせ{
-  background-color: #b1b1b1;
+  background-color: #afa8a8;
 }
 
 #お問い合わせ h2{
@@ -336,7 +336,7 @@ html {
   }
 
   header nav {
-    transform: translateY(15px);
+    transform: translateY(-20px);
   }
 
   .about {
