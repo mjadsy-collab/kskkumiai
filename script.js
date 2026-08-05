@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
   }
 
   let textOpacity = (y - textStart) / textDistance;
-  textOpacity = Math.min(1, Math.max(0, textOpacity));
+  textOpacity = Math.min(1, Math.max(0.2, textOpacity));
 
   if (heroContent) {
   heroContent.style.opacity = textOpacity;

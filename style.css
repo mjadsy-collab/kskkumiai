@@ -92,7 +92,7 @@ header {
   height: 100px; /* 100vhではなく80px */
   
   background: rgba(24, 23, 23, 0.9);
-  transition: top 0.9s ease;
+  transition: top 0.4s ease;
 }
 header h1 a {
   text-decoration: none;
@@ -201,7 +201,7 @@ html {
 }
 
 #研修センター紹介 h3 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 8px;
 }
@@ -212,14 +212,14 @@ html {
   padding-bottom: 100px;
 }
 
-
 .福山 h3 {
   text-align: center;
 }
 
-.content {
+.福山content {
   gap: 40px;
   align-items: center;
+  font-size: 19px;
 }
 .images{
   padding: 20px;
@@ -230,7 +230,11 @@ html {
   padding-top: 50px;
   margin-bottom: 30px;
 }
-
+.茨城content {
+  gap: 40px;
+  align-items: center;
+  font-size: 19px;
+}
 #研修センター紹介 img {
   width: 300px;
   border-radius: 10px;
@@ -245,10 +249,15 @@ html {
   margin-bottom: 100px;
 }
 
+.相関図 {
+  width: 700px;
+  border-radius: 10px;
+  padding-left: 10%
+;}
+
 #関係 {
   padding: 100px;
   background-color: #cacad0
-
 }
 #関係-row {
   margin-left: 15%;
@@ -274,6 +283,21 @@ html {
 
 #外国人特定技能制度 {
   padding: 100px;
+}
+
+.技能制度 {
+  width: 700px;
+  text-align: center;
+}
+
+#国 {
+  background-color: #cacad0;
+  padding-left: 15%;
+  padding-bottom: 15%;
+}
+
+#国 img{
+  height: 200px;
 }
 
 #File{
@@ -302,6 +326,7 @@ iframe {
   color: #fefffa;
   background-color: #20262cdd;
   text-align: center;
+  padding-top: 4%;
 }
 
 #お問い合わせ h2{
