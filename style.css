@@ -346,7 +346,7 @@ html {
     p {font-size: 18px;}
   }
 
-  nav {
+/*  nav {
     margin-top: 10px;
   }
 
@@ -354,6 +354,7 @@ html {
     display: inline-block;
     margin: 5px 10px 5px 0;
   }
+    */
 
   .File h2{
     margin-left: 10%;
